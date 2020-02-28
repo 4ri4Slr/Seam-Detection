@@ -3,7 +3,7 @@ import numpy as np
 import os
 import random
 
-Address = '/Cropped Dataset/Training Dataset/No Seam 128 Grey'
+Address = 'Cropped Dataset/Training Dataset/No Seam 128 Grey'
 
 loaded_images = list()
 
