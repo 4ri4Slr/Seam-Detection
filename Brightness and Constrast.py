@@ -9,7 +9,7 @@ loaded_images = list()
 
 for filename in os.listdir(Address):
     # load image
-    img_data = cv2.imread(Address + '\\' + filename)
+    img_data = cv2.imread(Address + '/' + filename)
     # store loaded image
     loaded_images.append(img_data)
 # print('> loaded %s %s' % (filename, img_data.shape))
@@ -25,6 +25,6 @@ for img in loaded_images:
     count = 0
     for im_data in br_con_images:
         cv2.imwrite(
-            Address + '\\' + 'img_br_co' + str(
+            Address + '/' + 'img_br_co' + str(
                 count) + '.jpg', im_data)
         count = count + 1
