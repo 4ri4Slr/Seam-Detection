@@ -4,8 +4,8 @@ dataset, and code snippets for data augmentation, the used CNN model in tensorfl
 ### Problem Overview
 This was a mini project I did for a bottle printing company that were interested in automatically detecting double sided vertical seams 
 on glass containers.
-The soluion was simply to emit a laser from one side of the bottle and capture the pattern of the beam on the other
-side of the bottle while the bottle rotates around its axis of symmetry.  
+The soluion was simply to emit a laser beam from one side of the bottle and capture the pattern on the other
+side while the bottle rotated around its axis of symmetry. The problem then could be formulated as a binary classification between seam and non-seam patterns.  
 
 Seam Laser Pattern| Regular Laser Pattern 
 ------------ | -------------
