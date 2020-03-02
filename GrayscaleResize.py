@@ -15,9 +15,9 @@ def resize_images(image):
 loaded_images = list()
 
 
-for filename in os.listdir('E:\\Studies\\M.Sc\\Seam Detection Project\\Cropped Dataset\\Test Dataset\\Seam'):
+for filename in os.listdir('Seam Detection Project/Cropped Dataset/Test Dataset/Seam'):
     # load image
-    img_data = image.imread('E:\\Studies\\M.Sc\\Seam Detection Project\\Cropped Dataset\\Test Dataset\\Seam\\'+filename)
+    img_data = image.imread('Seam Detection Project/Cropped Dataset/Test Dataset/Seam/'+filename)
     # store loaded image
     loaded_images.append(img_data)
     print('> loaded %s %s' % (filename, img_data.shape))
@@ -31,5 +31,5 @@ for img in loaded_images:
 # Save Resized Images
 count=0
 for img in resized_images:
-    img.save('E:\\Studies\\M.Sc\\Seam Detection Project\\Cropped Dataset\\Test Dataset\\'+ 'img_grey'+str(count)+'.jpg')
+    img.save('Seam Detection Project/Cropped Dataset/Test Dataset/'+ 'img_grey'+str(count)+'.jpg')
     count=count+1
