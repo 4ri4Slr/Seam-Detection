@@ -3,13 +3,13 @@ import cv2
 
 IMG_SIZE=128
 
-new_model = tf.keras.models.load_model('E:\\Studies\\M.Sc\\Seam Detection Project\\model')
+new_model = tf.keras.models.load_model('Seam Detection Project/model')
 new_model.summary()
 
-seam_test = cv2.imread('E:\\Studies\\M.Sc\\Seam Detection Project\\Demo images\\photo_166.jpg', cv2.IMREAD_GRAYSCALE)
+seam_test = cv2.imread('Seam Detection Project/Demo images/photo_166.jpg', cv2.IMREAD_GRAYSCALE)
 cv2.imshow("Seam", seam_test)
 
-noSeam_test = cv2.imread('E:\\Studies\\M.Sc\\Seam Detection Project\\Demo images\\photo_180.jpg', cv2.IMREAD_GRAYSCALE)
+noSeam_test = cv2.imread('Seam Detection Project/Demo images/photo_180.jpg', cv2.IMREAD_GRAYSCALE)
 cv2.imshow("Seam", noSeam_test)
 
 seam_test = cv2.resize(seam_test, (IMG_SIZE, IMG_SIZE))
