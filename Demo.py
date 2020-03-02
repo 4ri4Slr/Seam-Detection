@@ -6,11 +6,11 @@ import numpy as np
 
 IMG_SIZE=128
 
-new_model = tf.keras.models.load_model('E:\\Studies\\M.Sc\\Seam Detection Project\\model')
+new_model = tf.keras.models.load_model('Seam Detection Project/model')
 new_model.summary()
 
 
-images = [cv2.imread(file, cv2.IMREAD_GRAYSCALE) for file in glob.glob("E:\\Studies\M.Sc\\Seam Detection Project\\Demo images\\*.jpg")]
+images = [cv2.imread(file, cv2.IMREAD_GRAYSCALE) for file in glob.glob('Seam Detection Project/Demo images/*.jpg')]
 
 images = np.asarray(images)
 seam_test = cv2.resize(images[0], (IMG_SIZE, IMG_SIZE))
