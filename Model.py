@@ -35,4 +35,4 @@ model.compile(loss='binary_crossentropy',  optimizer='adam', metrics=['accuracy'
 
 model.fit(X, y, batch_size=32, epochs=50, validation_split=0.2)
 
-model.save('E:\\Studies\\M.Sc\\Seam Detection Project\\model')
+model.save('Seam Detection Project/model')
