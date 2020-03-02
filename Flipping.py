@@ -14,11 +14,11 @@ def up_down_flip(img):
     backward_image = img.transpose(Image.FLIP_TOP_BOTTOM)
     return backward_image
 
-Address= 'E:\\Studies\\M.Sc\\Seam Detection Project\\Cropped Dataset\\Training Dataset\\Seam 128 Grey'
+Address= 'Seam Detection Project/Cropped Dataset/Training Dataset/Seam 128 Grey'
 loaded_images = list()
 for filename in os.listdir(Address):
     # load image
-    img_data = Image.open(Address + '\\'+filename)
+    img_data = Image.open(Address + '/'+filename)
     # store loaded image
     loaded_images.append(img_data)
    # print('> loaded %s %s' % (filename, img_data.shape))
@@ -31,5 +31,5 @@ for img in loaded_images:
 
 count = 0
 for img in flipped_images:
-    img.save(Address + '\\' + 'img_grey_flipped'+str(count)+'.jpg')
+    img.save(Address + '/' + 'img_grey_flipped'+str(count)+'.jpg')
     count = count+1
