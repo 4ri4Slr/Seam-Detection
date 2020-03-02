@@ -6,7 +6,7 @@ import random
 import pickle
 import numpy as np
 
-DATADIR= 'E:\\Studies\\M.Sc\\Seam Detection Project\\Cropped Dataset\\Training Dataset'
+DATADIR= 'Seam Detection Project/Cropped Dataset/Training Dataset'
 
 CATEGORIES = ['No Seam 128 Grey', 'Seam 128 Grey']
 
